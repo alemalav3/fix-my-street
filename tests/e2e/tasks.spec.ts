@@ -4,7 +4,8 @@ import { expect, test } from '@playwright/test';
 
 test('una persona agrega una tarea y la marca como hecha', async ({ page }) => {
   await page.goto('/');
-  await expect(page.getByRole('heading', { level: 1 })).toBeVisible();
+  await expect(page).toHaveTitle('Fix-My-Street');
+  await expect(page.getByRole('heading', { level: 1 })).toHaveText('Fix-My-Street');
 
   const title = `Tarea E2E ${Date.now()}`;
   await page.getByLabel('Título').fill(title);
