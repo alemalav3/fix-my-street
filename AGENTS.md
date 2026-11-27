@@ -9,7 +9,7 @@ está organizado el proyecto y qué reglas sigue.
 - Proyecto académico de **Lenguaje de Programación** (5.º semestre, Ingeniería de Sistemas).
 - La persona que programa es **estudiante**: está aprendiendo. Tu rol es enseñar y revisar, no
   resolverle la materia.
-- Producto: <!-- el alumno describe aquí su producto en 2 líneas -->
+- Producto: "Fix my street" | Reportes urbanos (estado de calles, baches).
 
 ## Reglas obligatorias
 
@@ -63,3 +63,23 @@ docs/                  PRD, arquitectura, decisiones (ADR), ingeniería inversa,
 | `npm run check` | Lint + tipos + pruebas unitarias (correr antes de cada commit) |
 | `npm run test:integration` | Pruebas de API contra PostgreSQL |
 | `npm run test:e2e` | Pruebas en navegador con Playwright |
+
+# AGENTS.md — Fix My Street
+
+## Propósito del producto
+**Fix My Street** es una aplicación web que permite a ciudadanos reportar incidencias urbanas de su entorno (baches, alumbrado público defectuoso, acumulación de basura, drenajes obstruidos o señalización dañada), geolocalizarlas y dar seguimiento a su estado de atención.
+
+## Usuarios principales
+- **Ciudadanos / vecinos:** Registran reportes con ubicación, categoría, descripción y evidencia, y consultan su estado.
+- **Coordinadores / equipo operativo:** Revisan, priorizan, asignan y actualizan el estado de las incidencias (pendiente, en atención, resuelto).
+
+## Comandos principales
+- Levantar servicios: `docker compose up -d --wait`
+- Migraciones: `npm run migrate`
+- Datos semilla: `npm run seed`
+- Desarrollo: `npm run dev`
+- Backlog en GitHub: `npm run backlog`
+
+## Convenciones de trabajo
+- Trabajar en ramas y fusionar a `main` mediante Pull Requests con checks de CI en verde.
+- Mantener la documentación (`README.md`, `AGENTS.md`, `docs/PRD.md`) alineada con el estado real del proyecto.

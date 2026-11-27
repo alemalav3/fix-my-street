@@ -1,6 +1,7 @@
 fix-my-street
 
-> **Alumno:** cambia este título por el nombre de tu producto y esta línea por una frase que lo explique.
+> Fix my street: "Es una aplicación web que permite a los ciudadanos notificar y realizar un seguimiento de incidencias en su entorno local, tales como baches, farolas averiadas y otros problemas en la infraestructura pública. La aplicación ofrece una interfaz intuitiva para enviar reportes, consultar el estado de las incidencias notificadas y recibir actualizaciones por parte de las autoridades locales".
+
 > Proyecto n.º __ del catálogo · Sitio de referencia: __ · [PRD](docs/PRD.md) · URL publicada: __
 
 Plantilla del proyecto de **Lenguaje de Programación · 2026**.
