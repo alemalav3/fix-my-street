@@ -1,7 +1,7 @@
 {
   "name": "fix-my-street",
   "version": "0.1.0",
-  "description": "Proyecto de Lenguaje de Programación · cambia este texto por la descripción de tu producto",
+  "description": "Fix My Street es una aplicación web que permite a los ciudadanos notificar y realizar un seguimiento de incidencias en su entorno local, tales como baches, farolas averiadas y otros problemas en la infraestructura pública. La aplicación ofrece una interfaz intuitiva para enviar reportes, consultar el estado de las incidencias notificadas y recibir actualizaciones por parte de las autoridades locales",
   "private": true,
   "type": "module",
   "engines": {

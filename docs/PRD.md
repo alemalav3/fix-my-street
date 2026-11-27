@@ -1,4 +1,4 @@
-# PRD · <Nombre de tu producto>
+# PRD · <Fix my street>
 
 > Documento de requisitos del producto (Product Requirements Document).
 > Complétalo en el Sprint 0 (historia H0.3) y pide la aprobación del profesor en un Issue.
@@ -6,45 +6,35 @@
 
 | Campo | Valor |
 | --- | --- |
-| Alumno | |
-| Proyecto n.º | |
-| Sitio de referencia | |
+| Alumno |Andrés Malavé|
+| Proyecto n.º |31|
+| Sitio de referencia |FixMyStreet|
 | Compañero revisor | |
 | URL desplegada | (se completa en el Sprint 5) |
 
 ## 1. Problema
-
-¿Qué problema real resuelve y a quién le duele? (3 a 5 líneas)
+Los reportes de problemas en la vía pública y servicios urbanos suelen dispersarse en canales informales o perderse sin seguimiento claro, lo que dificulta priorizar incidencias y comunicar avances a los vecinos.
 
 ## 2. Usuarios
+- **Ciudadano:** Persona que reporta una incidencia urbana y consulta su avance.
+- **Gestor / Operador:** Persona que valida, clasifica y actualiza el estado de los reportes.
 
-- **Usuario principal:** quién es, qué necesita, desde qué dispositivo entra.
-- **Usuario secundario:**
+## 3. Alcance (MVP / Sprint 0–1)
+- **Incluye:** Registro y listado de incidencias urbanas, filtrado por estado/categoría, detalle de reporte y actualización de estado.
+- **No incluye (por ahora):** Integración con sistemas municipales externos, notificaciones SMS masivas o facturación.
 
-## 3. Objetivo y métrica de éxito
+## 4. Requisitos funcionales y no funcionales
+- **RF1:** Crear un reporte con título, descripción, categoría y ubicación/referencia.
+- **RF2:** Listar y filtrar reportes existentes.
+- **RF3:** Actualizar el estado de un reporte (por ejemplo: `pendiente`, `en_progreso`, `resuelto`).
+- **RNF1:** Interfaz clara y usable en escritorio y móvil; respuestas rápidas de la API y base de datos en entorno local.
 
-Ejemplo: «Un bodeguero registra una venta en menos de 10 segundos».
-
-## 4. Alcance del MVP
-
-Entre 5 y 8 funcionalidades que SÍ entran este semestre.
-
-1.
-2.
-3.
-
-### Funcionalidades → carpetas de `src/` (screaming architecture)
-
-Cada funcionalidad del alcance será una carpeta en `src/`. Nómbralas en inglés y en plural.
-
-| Funcionalidad | Carpeta |
-| --- | --- |
-| Ejemplo: ventas | `src/sales` |
-| | |
-
-## 5. Fuera de alcance
-
-Lo que NO vas a construir.
+## 5. Estructura prevista en `src/`
+- `src/app/` — Configuración de la aplicación y servidor.
+- `src/routes/` o `src/api/` — Endpoints y manejo de peticiones HTTP.
+- `src/services/` o `src/domain/` — Lógica de negocio de reportes.
+- `src/db/` o `src/repositories/` — Acceso a datos, migraciones y seeds.
+- `src/ui/` o `src/components/` — Vistas y componentes de interfaz.
 
 -
 
